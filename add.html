@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASMD</title>
+</head>
+<body>
+  
+    <h1>ASMD</h1>
+  <label>Enter First Number</label>
+  <input type="text" id="num1" placeholder="First number"><br><br>
+
+  <label>Enter Second Number</label>
+  <input type="text" id="num2" placeholder="Second number"><br><br>
+
+  <button onclick="task()">Submit</button>
+
+  <h3 id="add"></h3>
+  <h3 id="sub"></h3>
+  <h3 id="mul"></h3>
+  <h3 id="div"></h3>
+
+  <script>
+    function task() {
+      let n1 = Number(document.getElementById("num1").value);
+      let n2 = Number(document.getElementById("num2").value);
+      let asmd = {
+        addition: n1 + n2,
+        subtraction: n1 - n2,
+        multiplication: n1 * n2,
+        division: n1 / n2
+      };
+      document.getElementById("add").innerText = asmd.addition;
+      document.getElementById("sub").innerText = asmd.subtraction;
+      document.getElementById("mul").innerText = asmd.multiplication
+      document.getElementById("div").innerText = asmd.division;
+    }
+  </script>
+</body>
+</html>

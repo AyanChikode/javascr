@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods Buttons</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input{
+            padding: 8px;
+            width: 250px;
+        }
+        button{
+            padding: 8px 15px;
+            margin: 5px;
+        }
+        #output{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>String Methods With Spread Buttons</h2>
+
+    <input type="text" id="userString" placeholder="Enter any string">
+
+    <div>
+        <button onclick="showLength()">Length</button>
+        <button onclick="toUpper()">Uppercase</button>
+        <button onclick="toLower()">Lowercase</button>
+        <button onclick="doSlice()">Slice</button>
+        <button onclick="doReplaceAll()">Replace All</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+
+        function showLength() {
+            let str = document.getElementById("userString").value;
+            document.getElementById("output").innerHTML = 
+                `<p><strong>Length:</strong> ${str.length}</p>`;
+        }
+
+        function toUpper() {
+            let str = document.getElementById("userString").value;
+            document.getElementById("output").innerHTML = 
+                `<p><strong>Uppercase:</strong> ${str.toUpperCase()}</p>`;
+        }
+
+        function toLower() {
+            let str = document.getElementById("userString").value;
+            document.getElementById("output").innerHTML = 
+                `<p><strong>Lowercase:</strong> ${str.toLowerCase()}</p>`;
+        }
+
+        function doSlice() {
+            let str = document.getElementById("userString").value;
+            let sliced = str.slice(0, 5);
+            document.getElementById("output").innerHTML = 
+                `<p><strong>Slice (0–5):</strong> ${sliced}</p>`;
+        }
+
+        function doReplaceAll() {
+            let str = document.getElementById("userString").value;
+            let replaced = str.replaceAll(/a/gi, '*'); // replaces A and a
+            document.getElementById("output").innerHTML = 
+                `<p><strong>Replace All (a → *):</strong> ${replaced}</p>`;
+        }
+
+    </script>
+
+</body>
+</html>
