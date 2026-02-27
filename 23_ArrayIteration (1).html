@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Array Iteration</h1>
+
+    <ol>
+        <li>forEach()</li>
+        <li>map()</li>
+        <li>filter()</li>
+        <li>reduce()</li>
+    </ol>
+
+    <script>
+
+        // -------------------------------------------------------------------------------
+        // forEach()
+        // -------------------------------------------------------------------------------
+
+        // Description
+        // The forEach() method calls a function for each element in an array.
+        // The forEach() method is not executed for empty elements.
+        // -------------------------------------------------------------------------------
+
+        // Syntax
+        // array.forEach((chotya, madlya, dada) => {
+        //     console.log(chotya);
+        // });
+
+        // -------------------------------------------------------------------------------
+
+        // let colors = ['red', 'green', 'blue', 'orange', 'pink', 'yellow', 'aqua', 'white', 'black'];
+
+        // for (let i = 0; i < colors.length; i++) {
+        //     console.log(colors[i]);
+        // };
+
+        // ----- Using forEach() -----
+
+        // colors.forEach((arr, value, index) => {
+        //     console.log(value, index, arr);
+        // });
+
+        // ----- Using forEach() -----
+
+        // -------------------------------------------------------------------------------
+        // ------------------------  array.map(); ---------------------------------------
+        // -------------------------------------------------------------------------------
+
+        // Description
+        // map() creates a new array from calling a function for every array element.
+        // map() does not execute the function for empty elements.
+        // map() does not change the original array.
+
+        // Syntax
+        // array.map(function(currentValue, index, arr), thisValue)
+
+        // ---------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------
+
+        // let colors = ['red', 'green', 'blue', 'orange', 'pink', 'yellow']; // 101010
+
+        // let newColors = new Array();  // 100100
+
+        // for (let i = 0; i < colors.length; i++) {
+        //     newColors.push(colors[i]);
+        // };
+
+        // colors.push("White");
+        // colors.push("Black");
+
+        // console.log(colors);
+        // console.log(newColors);
+
+
+        // ----- Using map() -----
+
+        // let store = colors.map((currentValue, index, arr) => {
+        //     return currentValue;
+        // });
+
+        // colors.push("White");
+        // colors.push("Black");
+
+        // console.log(colors);
+        // console.log(store);
+
+        // ----- Using map() -----
+
+
+        // -------------------------------------------------------------------------------
+        // ------------------------  array.filter(); ---------------------------------------
+        // -------------------------------------------------------------------------------
+
+        //  Description
+        // The filter() method creates a new array filled with elements that pass a test provided by a function.
+        // The filter() method does not execute the function for empty elements.
+        // The filter() method does not change the original array.
+
+        // Syntax
+        // array.filter(function (currentValue, index, arr), thisValue)
+
+        // ---------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------
+
+        // let values = [50, 12, 40, 13, 8, 5, 17, 18, 22, 55, 68, 19, 10];
+
+        // let newValues = new Array();
+
+        // for (let i = 0; i < values.length; i++) {
+        //     if (values[i] >= 18) {
+        //         // console.log(values[i]);
+        //         newValues.push(values[i]);
+        //     };
+        // };
+
+        // console.log(values);
+        // console.log(newValues);
+        // console.log("program End !!!");
+
+        // ----- Using filter() -----
+
+        // let values = [50, 12, 40, 13, 8, 5, 17, 18, 22, 55, 68, 19, 10];
+
+        // let newValues = values.filter((currentValue) => {
+        //     return currentValue >= 18;
+        // });
+
+        // console.log(values);
+        // console.log(newValues);
+
+        // ----- Using filter() -----
+
+
+
+        // -------------------------------------------------------------------------------
+        // ------------------------  array.reduce(); ---------------------------------------
+        // -------------------------------------------------------------------------------
+
+        // Description
+        // The reduce() method executes a reducer function for array element.
+        // The reduce() method returns a single value: the function's accumulated result.
+        // The reduce() method does not execute the function for empty array elements.
+        // The reduce() method does not change the original array.
+
+        // Syntax
+        // array.reduce(function (total, currentValue, index, arr), thisValue)
+
+        // ---------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------
+
+        let values = [50, 100, 150, 200, 250, 250];
+
+        let newValue = values.reduce((total, currentValue) => {
+            return total + currentValue;
+        });
+
+        console.log(newValue); // 1000
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

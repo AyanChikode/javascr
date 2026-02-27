@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #btn {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animation</h1>
+
+    <ol>
+        <li>setInterval</li>
+        <li>clearInterval</li>
+    </ol>
+    <hr>
+    <ol>
+        <li>setTimout</li>
+        <li>clearTimeout</li>
+    </ol>
+
+    <hr>
+    <hr>
+    <button id="btn"></button>
+    <br><br>
+
+    <button onclick="stopInterval()">Stop Interval</button>
+    <button onclick="stopTimeOut()">Stop Timeout</button>
+
+
+    <script>
+
+
+
+        let count = 0;
+
+        let myInterval = setInterval(() => {
+
+            count += 100;
+
+            if (count === 1300) {
+                clearInterval(myInterval);
+            };
+
+            console.log("Demo");
+            
+
+            document.getElementById("btn").style.marginLeft = count + "px";
+        }, 500);
+
+
+        function stopInterval() {
+            clearInterval(myInterval);
+        };
+
+
+
+        // -----------------------------------------------------------------------------------------------------------------
+        // setTimeout()
+        // -----------------------------------------------------------------------------------------------------------------
+
+
+
+        let myTimeout = setTimeout(() => {
+            console.log("I am SetTimeout")
+        }, 2000);
+
+
+
+        function stopTimeOut() {
+            clearTimeout(myTimeout);
+        };
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

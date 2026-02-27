@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Function Inside Function</h1>
+
+    <script>
+
+
+        // let city = "Kolhapur !!!";
+
+
+        function parent() {
+            // let city = "Kolhapur !!!";
+
+            function childA() {
+                // let city = "Kolhapur";
+
+                const childB = function () {
+                    // let city = "Kolhapur";
+
+                    const childC = () => {
+                        let city = "Kop";
+                        console.log("Child C : " + city);
+                    };
+
+                    const child = () => {
+                        console.log("Child d : " + city);
+                    };
+
+                    console.log("Child B :");
+                    childC();
+                    child();
+                };
+
+                console.log("child A : ");
+                childB();
+            };
+
+            console.log("Parent");
+            childA();
+
+        };
+
+        parent();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

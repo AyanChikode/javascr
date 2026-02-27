@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>String Indexing / String Methods</h1>
+    <h1 id="output">***</h1>
+
+    <script>
+        // 0    1   2   3
+        // i    G   A   P
+        // -4   -3  -2  -1
+
+        // let name = " iGAP Technologies";
+        // // console.log(name[0]);
+        // // console.log(name[1]);
+        // // console.log(name[2]);
+        // // console.log(name[3]);
+        // // console.log(name[4]);
+
+        // console.log(name[name.length-1]);
+
+        // ----------------------------------------------------------------------------
+        // String Methods
+        // ----------------------------------------------------------------------------
+
+        // let name = "iGAP Technologies";
+        // console.log(name.length);
+        // console.log(name.toUpperCase());
+        // console.log(name.toLowerCase());
+
+        // ----------------------------------------------------------------------------
+        // Slicing Methods
+        // ----------------------------------------------------------------------------
+
+        // ----- Slice and Substring is similar -----
+        // ----- Syntax:- string.slice(Start, end) -----
+        // ----- Syntax:- string.substring(Start, end) -----
+
+        // let name = "iGAP Technologies";
+        // console.log(name.slice(5, 20));
+        // console.log(name.slice(5));
+
+        // console.log(name.substring(0, 4));
+        // console.log(name.substring(0));
+
+        // ----- Syntax:- string.subst(Start, length) -----
+
+        // console.log(name.substr(5, 6));
+
+        // ----------------------------------------------------------------------------
+        // Concat
+        // ----------------------------------------------------------------------------
+
+        // let firstName = "Prathmesh";
+        // let surname = "Patil";
+        // let city = "Kolhapur";
+
+        // console.log(firstName + "_" + surname + "_" + city);
+        // let data = firstName.concat(" ", surname, " ", city);
+        // console.log(data);
+
+
+        // ----------------------------------------------------------------------------
+        // Trimming
+        // ----------------------------------------------------------------------------
+
+        // let name = "      iG     AP     ";
+        // console.log(name.length); // 4
+
+        // let newName = name.trim();
+        // console.log(newName);
+        // console.log(newName.length);
+
+        // ----------------------------------------------------------------------------
+
+        // let newName = name.trimStart();
+        // console.log(newName);
+        // console.log(newName.length);
+
+        // ----------------------------------------------------------------------------
+
+        // let newName = name.trimEnd();
+        // console.log(newName);
+        // console.log(newName.length);
+
+        // ----------------------------------------------------------------------------
+        // Padding
+        // ----------------------------------------------------------------------------
+
+        // let num = "5";
+        // console.log(num.padStart(5, 0));
+
+        // console.log(num.padEnd(5, 0));
+
+
+        // ----------------------------------------------------------------------------
+        // Repeat / Replace / ReplaceAll
+        // ----------------------------------------------------------------------------
+
+        // let name = "Kolhapur_";
+        // console.log(name.repeat(5));
+
+        // let msg = "My fav Pet is dog, my dog name is Bruno, my dog love's sticks";
+        // console.log(msg);
+
+        // console.log(msg.replace("dog", "cat"));
+        // console.log(msg.replaceAll("dog", "cat"));
+
+        // ----------------------------------------------------------------------------
+        // split
+        // ----------------------------------------------------------------------------
+
+        // let fruits = "PineApple,Banana,Chiku";
+        // console.log(fruits);
+
+        // let newFruit = fruits.substr(0, 5);
+        // console.log(newFruit);
+
+        // let newFruit2 = fruits.slice(6, 11);
+        // console.log(newFruit2);
+
+        // let newFruit3 = fruits.substring(12);
+        // console.log(newFruit3);
+
+        // let allFruits = fruits.split(",");
+        // console.log(allFruits);
+
+        // console.log(allFruits[0]);
+        // console.log(allFruits[1]);
+        // console.log(allFruits[2]);
+
+
+        // ----------------------------------------------------------------------------
+        // To get Data indexing wise
+        // ----------------------------------------------------------------------------
+
+        // let name = "iGAP";
+        // console.log(name[0]);
+
+        // console.log(name.at(0));
+        // console.log(name.at(1));
+        // console.log(name.at(2));
+        // console.log(name.at(3));
+        // console.log(name.at(-1));  // to Access Last Element
+
+        // console.log(name.charAt(0));
+        // console.log(name.charAt(1));
+        // console.log(name.charAt(2));
+        // console.log(name.charAt(3));
+        // console.log(name.charAt(name.length-1));  // to Access Last Element
+
+
+        // ----------------------------------------------------------------------------
+        // CharCodeAt - To Provide Ascii Value
+        // ----------------------------------------------------------------------------
+
+        let name = "IGAP";
+
+        console.log(name.charCodeAt(0));
+        console.log(name.charCodeAt(1));
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

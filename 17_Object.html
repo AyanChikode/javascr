@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            color: red;
+            color: rgb(71, 234, 255);
+            background-color: yellow;
+            background-color: rgb(19, 141, 255);
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+
+    <h1>Object</h1>
+
+    <script>
+
+        //  How to declare Object
+        // let obj1 = {};
+        // let obj2 = new Object();
+
+        // console.log(obj1)
+        // console.log(obj2)
+
+        // -------------------------------------------------------------
+
+        let student = {
+            "my name": "Janhavi",
+            age: 22,
+            course: true,
+            "hobbies": ["Coding", "Reading", "Dancing"],
+            food: {
+                homeMade_food: "Pitla-Bhakri",
+                street_food: "Sandwitch"
+            }
+        };
+
+        // console.log(student["my name"]);
+        // console.log(student.age);
+        // console.log(student.hobbies[0]);
+        // console.log(student.hobbies[1]);
+        // console.log(student.hobbies[2]);
+
+        // console.log(student.food.homeMade_food);
+        // console.log(student.food.street_food);
+
+
+
+        // --------------------------- Dot Notation & Bracket Notation ---------------------------
+
+        // console.log(student.age);
+        // console.log(student["age"]);
+
+
+        // console.log(student.course);
+        // console.log(student["course"]);
+
+
+        // ----------------------- How to add element in Object --------------------------------------------
+
+        console.log(student);
+
+        student.gender = "female";
+
+
+        console.log(student.gender);
+
+    </script>
+</body>
+
+</html>

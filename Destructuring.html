@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Destructuring</h1>
+
+    <script>
+
+        // let colors = ["red", "green", "blue"];
+
+        // let color1 = colors[0];
+        // let color2 = colors[2];
+        // let color3 = colors[2];
+
+        // console.log(color1);
+        // console.log(color2);
+        // console.log(color3);
+
+        // ---------------------------------------------------------
+        //  Destructuring using Array
+        // ---------------------------------------------------------
+
+        // let colors = ["red", "green", "blue"];
+
+        // let [color1,, color2, color3] = colors;
+
+        // console.log(color1);
+        // console.log(color2);
+        // console.log(color3);
+
+
+        // ---------------------------------------------------------
+        //  Destructuring using Object
+        // ---------------------------------------------------------
+
+
+        let student = {
+            name: "Soniya",
+            surname: "Patil",
+            email: "sp@gmail.com",
+            mobile: 9878547858,
+            job: true,
+            hobbies: ["Playing", "Reading", "Coding"],
+            food: {
+                homeMade: "Panner Tika Masala",
+                stretFood: "Pizza"
+            }
+        };
+
+        let { name, surname, mobile, hobbies, food} = student;
+
+        console.log(name);
+        console.log(surname);
+        console.log(mobile);
+        console.log(hobbies[2]);
+        console.log(food.homeMade);
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Spread Operator - ES6 (2015)</h1>
+
+
+
+    <script>
+
+        let boys = ["amit", "sumit", "Prakash"];
+        let girls = ["Pinki", "Chinki"];
+        let staff = ["Priya", "Payal", "Priyanka"]
+
+
+        let allStudents = [...boys, ...girls];
+        console.log(allStudents, "-", allStudents.length); // 5
+
+        // console.log([...boys, ...girls, ...staff, "Prajakta"]);
+
+        let allMembers = [...boys, ...girls, ...staff, "Abhijit Gatade"]; // 9
+        console.log(allMembers, "-", allMembers.length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
